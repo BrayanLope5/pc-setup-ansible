@@ -1,6 +1,7 @@
 - hosts: localhost
   connection: local
   become: true
+  become_user: brayan
 
   pre_tasks:
     - include_tasks: ansible/tasks/pre_tasks.yml
