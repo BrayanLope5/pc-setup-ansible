@@ -3,3 +3,5 @@
   become: true
   become_user: brayan
 
+  pre_tasks:
+    - include: ansible/tasks/pre_tasks.yml
