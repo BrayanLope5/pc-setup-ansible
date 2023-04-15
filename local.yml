@@ -1,0 +1,8 @@
+- host: localhost
+  connection: local
+  become: true
+  become_user: brayan
+
+  tasks:
+    - name: Install
+
