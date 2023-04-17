@@ -1,4 +1,4 @@
-- name: Full system upgrade for Arch Linux with Pacman
+- name: Full system upgrade for Arch Linux using Pacman.
   community.general.pacman:
     update_cache: true
     upgrade: true
