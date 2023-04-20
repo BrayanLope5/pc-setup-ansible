@@ -1,0 +1,31 @@
+- name: From repos AND AUR, install GUI apps, their dependencies, and KDE plasma desktop packages using pacman.
+  community.general.pacman:
+    name:
+      - grub-btrfs
+      - timeshift
+      - timeshift-autosnap
+      - xdg-desktop-portal
+      - xdg-desktop-portal-kde
+      - qt5-imageformats
+      - kdeplasma-addons
+      - ffmpegthumbs
+      - visual-studio-code-bin
+      - chromium
+      - libreoffice-still
+      - hunspell
+      - hunspell-en_us
+      - hunspell-es_any
+      - hunspell-es_gt
+      - hunspell-es_mx
+      - pdfarranger
+      - alacritty
+      - gparted
+      - mpv
+      - nomacs
+    state: present
+
+- name: Remove conflicting packages.
+  community.general.pacman:
+    name:
+      - ffmpegthumbnailer
+    state: absent

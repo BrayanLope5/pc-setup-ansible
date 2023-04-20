@@ -1,0 +1,31 @@
+- name: From repos AND AUR, install command line tools using pacman.
+  community.general.pacman:
+    name:
+      - zsh
+      - starship
+      - bottom
+      - lolcat
+      - neofetch
+      - silicon
+      - mediainfo
+      - beets
+      - python-pyacoustid
+      - chromaprint
+      - python-requests
+      - bat
+      - htop
+      - ripgrep
+      - fd
+      - lazygit
+      - zoxide
+      - fzf
+      - ansible
+      - zellij
+      - neovim-nightly-bin
+    state: present
+
+- name: Remove conflicting packages.
+  community.general.pacman:
+    name:
+      - neovim
+    state: absent
