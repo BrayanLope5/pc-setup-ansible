@@ -15,6 +15,10 @@
   tasks:
     - name: Install command line tools using pacman.
       import_tasks: ansible/tasks/pacman_install_cli_apps.yml
+      become: true
+      become_user: root
 
     - name: Install GUI apps using pacman.
       import_tasks: ansible/tasks/pacman_install_gui_apps.yml
+      become: true
+      become_user: root
