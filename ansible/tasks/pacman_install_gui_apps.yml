@@ -29,4 +29,5 @@
   community.general.pacman:
     name:
       - ffmpegthumbnailer
+      - libreoffice-still
     state: absent
