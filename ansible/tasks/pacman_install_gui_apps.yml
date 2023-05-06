@@ -23,6 +23,9 @@
       - gparted
       - mpv
       - nomacs
+      - gimagereader-qt
+      - tesseract-data-eng
+      - tesseract-data-spa
     state: present
 
 - name: Remove conflicting packages.
