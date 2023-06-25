@@ -26,6 +26,9 @@
       - gimagereader-qt
       - tesseract-data-eng
       - tesseract-data-spa
+      - mkvtoolnix-gui
+      - picard
+      - system-config-printer
     state: present
 
 - name: Remove conflicting packages.

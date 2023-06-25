@@ -22,6 +22,7 @@
       - ansible
       - zellij
       - neovim-nightly-bin
+      - mkvtoolnix-cli
     state: present
 
 - name: Remove conflicting packages.
